@@ -1,0 +1,46 @@
+.input {
+  width: 315px;
+  height: 48px;
+  border-radius: 10px;
+  padding: 14px 20px;
+  border: 1px solid var(--white);
+}
+
+.input::placeholder {
+  padding-right: 10px;
+}
+
+.input_error::placeholder {
+  color: var(--red-100);
+}
+
+.input:focus {
+  border: 1px solid var(--grey-100);
+}
+
+.input_correct:focus {
+  border: 1px solid var(--green-100);
+}
+
+.input_error:focus {
+  border: 1px solid var(--red-100);
+}
+
+.input_error {
+  color: var(--red-100);
+  background: var(--red-5);
+  border: 1px solid var(--red-100);
+}
+
+.input_correct {
+  color: var(--green-100);
+  border: 1px solid var(--green-100);
+}
+
+input[type="password"].input_error {
+  color: var(--red-100);
+}
+
+input:-webkit-autofill.input_correct{
+  -webkit-text-fill-color: var(--green-100);
+}

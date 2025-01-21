@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+.form__validContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.form__input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.form__inputError {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--red-100);
+  padding: 0 20px;
+  margin-top: 8px;
+}
+
+.form__validContent_error {
+  color: var(--red-100);
+}
+
+.form__validContent_correct {
+  color: var(--green-70);
+}
